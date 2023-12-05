@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade de Pessoa!</h1>
+    Digite o País de nascimento: <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="Verificar" onclick="verificarNacionalidade()">
+    <div id="res"></div>
+
+    <script>
+        function verificarNacionalidade() {
+            var txtn = window.document.querySelector('input#txtn1');
+            var res = window.document.querySelector('div#res');
+            var paísNascimento = txtn.value;
+
+            res.innerHTML = `<p>Você nasceu no <strong>${paísNascimento}</strong></p>`;
+
+            if (paísNascimento.toLowerCase() === 'brasil') {
+                console.log('Você é brasileiro(a)!');
+                res.innerHTML += '<p>Você é brasileiro(a)!</p>';
+            } else {
+                console.log('Você é estrangeiro(a)');
+                res.innerHTML += '<p>Você é estrangeiro(a)!</p>';
+            }
+
+            res.innerHTML += '<p>Dirija sempre com o cinto de segurança!</p>';
+        }
+    </script>
+</body>
+</html>
