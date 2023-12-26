@@ -9,13 +9,22 @@
 <body>
     <main>
         <header>
-            <h1>Tabuada</h1>
+            <h1>Tabuada</h1> 
         </header>
         <section>
             <div>
                 <p>Número
-                    <input type="number" name="tnumber" id="tnumber">                   <input type="button" value="Gerar Tabela" onclick="gerarTabela()"><p>
-            </p>
+                    <input type="number" name="tnum" id="txtn">
+                    <input type="button" value="Gerar Tabela" onclick="tabuada()">
+                </p>
+            </div>
+            <div>
+                <select name="tabuada" id="seltab" size="10">
+                    <!--<option value="v1">Valor 1</option>
+                    <option value="v2">Valor 2</option> Transformado no JavaScript-->
+                    <option>Digite um número acima!</option>
+                </select>
+            </div>
         </section>
     </main>
     <footer>
